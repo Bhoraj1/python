@@ -8,5 +8,6 @@ match(a):
 
   case 6 :
     print("You won a camera")
+
   case _:
     print("Better luck next time")

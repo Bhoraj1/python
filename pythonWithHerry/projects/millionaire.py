@@ -1,26 +1,34 @@
 questions =[
   [
-  "Who is Shah Rukh Khan?","WWE Wrestle", "Actor","Plumber","Doctor","Footballer",2],
+  "Who is Shah Rukh Khan?","WWE Wrestle", "Actor","Plumber","Doctor",2],
   [
-  "What is the Capital of France","Paris","Romo","London",0
+  "What is the Capital of France","Paris","Romo","London","New work",1
   ],
   [
-  "What is the Largest animal ? ", "Shark", "Blue Whale", "Elephant", "Giraffe", 2
+  "What is the Largest animal ? ", "Shark", "Blue Whale", "Elephant", "Giraffe", 1
   ],
-
   [
-     "What is the square root of 64 ? ", "4", "8", "6", "2", 1
+     "What is the square root of 64 ? ", "4", "8", "6", "2", 2
   ]  
   ]
+prizes = [1000,500,200,100]
+p = 0
+
 
 
 for i in questions:
   print(i[0])
-  print(f"Queston 1: {i[1]}")
-  print(f"Queston 1: {i[2]}")
-  print(f"Queston 1: {i[3]}")
+  print(f"a : {i[1]}")
+  print(f"b : {i[2]}")
+  print(f"c:  {i[3]}")
+  print(f"d : {i[4]}")
 
   #check the answer is correct or not
-  answer = int(input("Enter your answer: 1 for a, 2 for b, and 3 for c"))
-  if answer == i[5]:
+  a = answer = int(input("Enter your answer: a:1 , b:2 , c:3 : "))
+  if (i[5] == a):
     print("Correct")
+  else:
+    print(f"Incorrect, The answer was {i[5]}") 
+    break
+  print(f"You won {prizes[p]}")
+  p +=1 

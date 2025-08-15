@@ -5,12 +5,14 @@ from plyer import notification
 # Keep running the code inside this loop forever, until I manually stop it or break out of it.”
 
 try:
- while True:
+ limit = 0
+ while limit < 2:
     print("Please Drink Some Water")
     notification.notify(
         title="Please Drink some Water",
         message="You need to drink some Water"
     )
     time.sleep(10)
+    limit += 1
 except KeyboardInterrupt:
     print("\nProgram stopped by user.")

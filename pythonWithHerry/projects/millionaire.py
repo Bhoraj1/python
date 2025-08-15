@@ -11,8 +11,6 @@ questions =[
      "What is the square root of 64 ? ", "4", "8", "6", "2", 2
   ]  
   ]
-prizes = [1000,500,200,100]
-p = 0
 
 
 
@@ -23,12 +21,10 @@ for i in questions:
   print(f"c:  {i[3]}")
   print(f"d : {i[4]}")
 
+
   #check the answer is correct or not
-  a = answer = int(input("Enter your answer: a:1 , b:2 , c:3 : "))
+  a = answer = int(input("Enter your answer: a:1 , b:2 , c:3 , D:4 "))
   if (i[5] == a):
     print("Correct")
   else:
     print(f"Incorrect, The answer was {i[5]}") 
-    break
-  print(f"You won {prizes[p]}")
-  p +=1 

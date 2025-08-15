@@ -1,15 +1,16 @@
 from PyPDF2 import PdfWriter
 
-merger = PdfWriter()
+f = PdfWriter()
 pdfs = []
-n = int(input("How many pdf do you want to merge\n"))
+
+n = int(input("How many pdf do you want to merge\n")) 
 
 for i in range(0,n):
   name= input((f"Enter the name the pdf {i + 1} : "))
   pdfs.append(name)
 
 for pdf in pdfs:
-  merger.append(pdf)
+  f.append(pdf)
 
-merger.write("Merged_pdf.pdf")
-merger.close()
+f.write("Merged_pdf.pdf")
+f.close()
